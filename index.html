@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07152f">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Student Helper">
+  <title>Student Helper 2.0</title>
+
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #07152f;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    header { padding: 50px 20px 25px; }
+    h1 { color: #e9bd55; }
+    p { color: #d3def1; line-height: 1.7; }
+    button {
+      background: #1769d2;
+      color: white;
+      border: 0;
+      border-radius: 12px;
+      padding: 15px 25px;
+      font-size: 17px;
+      font-weight: bold;
+    }
+    iframe {
+      width: 100%;
+      height: 75vh;
+      border: 0;
+      background: white;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Student Helper 2.0</h1>
+    <p>Your university learning platform</p>
+    <button onclick="openApp()">Open Student Helper</button>
+  </header>
+
+  <iframe
+    id="app"
+    title="Student Helper"
+    src="https://script.google.com/macros/s/AKfycbzu72wKxevswSDa70_Hen27Oxw-pZs9NAv58t-Qdk0YKdHpkYptZyLY0n9efmUR4OCXCQ/exec">
+  </iframe>
+
+  <script>
+    function openApp() {
+      window.location.href =
+        "https://script.google.com/macros/s/AKfycbzu72wKxevswSDa70_Hen27Oxw-pZs9NAv58t-Qdk0YKdHpkYptZyLY0n9efmUR4OCXCQ/exec";
+    }
+  </script>
+</body>
+</html>
